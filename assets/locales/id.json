@@ -1,0 +1,15 @@
+{
+  "language": "Indonesia",
+  "login": {
+    "title": "Masuk ke latar belakang",
+    "text": "Silakan masuk",
+    "name": "Silakan masukkan nama pengguna",
+    "password": "Silakan masukkan kata sandi",
+    "code": "Silakan masukkan kode verifikasi",
+    "remember": "Ingat kata Sandi",
+    "btn": "Gabung",
+    "errorName": "Silakan masukkan nama pengguna yang benar",
+    "errorPassword": "Silakan masukkan kata sandi yang benar",
+    "errorCode": "Silakan masukkan kode verifikasi yang benar"
+  }
+}
