@@ -1,12 +1,5 @@
 <template>
   <section class="login-container">
-    <!-- <nuxt-link
-      v-for="locale in availableLocales"
-      :key="locale.code"
-      :to="switchLocalePath(locale.code)"
-    >
-      {{ locale.name }}
-    </nuxt-link> -->
     <h1 class="login-title">{{ $t('login.title') }}</h1>
     <el-form ref="form" :model="form" size="small" class="login-form">
       <p class="form-text">{{ $t('login.text') }}</p>
@@ -74,12 +67,6 @@ export default {
       title: this.$t('login.title'),
     }
   },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
-    },
-  },
-  mounted() {},
   methods: {
     async doSubmit() {
       if (this.form.name.length === 0) {

@@ -109,4 +109,8 @@ export default {
   cache: true,
 
   serverMiddleware: ['~/api/index.js'],
+
+  router: {
+    middleware: 'authorities',
+  },
 }

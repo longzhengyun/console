@@ -1,6 +1,6 @@
 import Promise from 'bluebird'
 import jwt from 'jsonwebtoken'
-import Cookies from 'cookie-universal-nuxt'
+// import Cookies from 'cookie-universal-nuxt'
 import secret from '../api/config/secret'
 
 const jwtVerify = Promise.promisify(jwt.verify)
@@ -16,11 +16,11 @@ const verify = async (ctx, next) => {
       data: null,
     }
 
-    const token = Cookies.get('token')
+    // const token = Cookies.get('token')
 
     try {
       // 解码
-      await jwtVerify(token, secret)
+      await jwtVerify('token', secret)
       await next()
     } catch (err) {
       result.msg = 'token 已失效!'
